@@ -1,0 +1,10 @@
+// UTF-8?
+// it represent more characters than ASCII. (1 byte only allowed 256 characters) 
+
+// utf-8 introduced a variable byte length 1-4 bytes that incresing range of possible characters.
+
+// * variable sized characters doesn't have unnecessary bytes for very common ASCII. require only 1 byte in utf-8.
+// * variable sized characters doesn't follow the O(1) which is [constant time] with simple indexing. 
+// ~ iter utf-8 byte sequence to understand unicode characters where actually begins with O(n) which is [linear time].
+
+// A big Example: emojis.....🚀
