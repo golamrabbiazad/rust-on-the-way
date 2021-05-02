@@ -56,7 +56,7 @@ enum Weapon {
     None,
 }
 
-fn object_type() {
+pub fn object_type() {
     // SeaCreature's data is on stack
     let ferris = SeaCreature {
         species: Species::Crab,
@@ -92,7 +92,7 @@ fn object_type() {
     }
 }
 
-fn tupple_like() {
+pub fn tupple_like() {
     let loc = Locaiton(324, 235);
     println!("first loc: {}, second loc: {}", loc.0, loc.1)
 }
@@ -100,8 +100,3 @@ fn tupple_like() {
 // fn unit_like() {
 //     let m = Marker;
 // }
-
-fn main() {
-    object_type();
-    tupple_like();
-}
